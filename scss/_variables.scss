@@ -1,0 +1,38 @@
+//Paleta de colores
+$negro: #1c1d1f;
+$principal: #741d51;
+$secundario: #e44e52;
+$oscuro: #000;
+$amarillo: #eceb98;
+$naranja: #b4690e;
+$cafe: #3d3c0a;
+$blanco: #ffffff;
+$gris: #717171;
+$gris2: #d1d7dc;
+$gris3: #f8f9fb;
+
+//Fuentes
+$Regular: HelveticaRegular;
+$Bold: HelveticaBold;
+$Titulos: SuisseWorksBold;
+
+@font-face {
+    font-family: HelveticaRegular;
+    src: url(../fonts/Helvetica.ttf);
+}
+
+@font-face {
+    font-family: HelveticaBold;
+    src: url(../fonts/Helvetica-Bold.ttf);
+}
+
+@font-face {
+    font-family: SuisseWorksBold;
+    src: url(../fonts/SuisseWorksBold.ttf);
+}
+
+//Medidas para pantallas de dispositivos
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+

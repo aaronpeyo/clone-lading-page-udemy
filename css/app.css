@@ -1,0 +1,354 @@
+@font-face {
+  font-family: HelveticaRegular;
+  src: url(../fonts/Helvetica.ttf);
+}
+@font-face {
+  font-family: HelveticaBold;
+  src: url(../fonts/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: SuisseWorksBold;
+  src: url(../fonts/SuisseWorksBold.ttf);
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: HelveticaRegular;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  height: 5.5rem;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor-header {
+  margin: 0 auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contenedor-header .logo {
+  padding: 1rem 0;
+}
+.contenedor-header .logo img {
+  width: 10rem;
+}
+.contenedor-header .carrito {
+  position: relative;
+}
+.contenedor-header .carrito .icono-shoping {
+  width: 1.8rem;
+}
+.contenedor-header .carrito .lista-compras {
+  display: none;
+  width: 380px;
+}
+.contenedor-header .carrito:hover .lista-compras {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 40%;
+  border: 1px solid #d1d7dc;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 1.4rem;
+}
+.contenedor-header .carrito:hover .lista-compras .curso-shoping {
+  width: 14rem;
+}
+.contenedor-header .carrito:hover .lista-compras th {
+  font-family: HelveticaBold;
+  font-weight: normal;
+}
+.contenedor-header .carrito:hover .lista-compras .boton {
+  padding: 1rem;
+  font-weight: bold;
+  background-color: #1c1d1f;
+  color: #ffffff;
+  font-size: 1.6rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.contenedor-header .carrito:hover .lista-compras .boton:hover.boton {
+  background-color: #000;
+}
+
+.hero {
+  background-size: cover;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 40rem;
+}
+.hero .capa {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  min-height: 40rem;
+  width: 100%;
+  height: 100%;
+}
+.hero .contenedor-hero {
+  margin: 0 auto;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40rem;
+}
+.hero .contenido-header {
+  flex: 1;
+  color: #ffffff;
+}
+.hero .contenido-header h1 {
+  font-family: SuisseWorksBold;
+  margin: 0;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+.hero .contenido-header p {
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+  font-weight: 700;
+}
+.hero .contenido-header form {
+  max-width: 100%;
+  position: relative;
+}
+.hero .contenido-header form input[type=submit] {
+  border: none;
+  outline: none;
+  text-indent: -9999px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 4.5rem;
+  width: 4.5rem;
+  padding: 0 1.2rem;
+  background-color: #ffffff;
+}
+.hero .contenido-header form input[type=text] {
+  outline: none;
+  background-color: #ffffff;
+  border: none;
+  padding: 0 1.6rem;
+  width: 100%;
+  height: 4.5rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  form {
+    width: 40%;
+  }
+}
+.servicios {
+  background-image: linear-gradient(to right, #741d51 0%, #e44e52 100%);
+}
+.servicios .contenedor-servicios {
+  min-height: 11.3rem;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2.4rem 0;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+@media only screen and (min-width: 1024px) {
+  .servicios .contenedor-servicios {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.servicios .servicio {
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .servicios .servicio {
+    flex: 1;
+  }
+}
+.servicios #servicio-1 {
+  background-image: url(../img/icono1.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 3.5rem;
+}
+.servicios #servicio-2 {
+  background-image: url(../img/icono2.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 3.8rem;
+}
+.servicios #servicio-3 {
+  background-image: url(../img/icono3.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 3.8rem;
+}
+
+.cursos {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.cursos h2 {
+  font-family: SuisseWorksBold;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: #1c1d1f;
+}
+.cursos p {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  -moz-columns: #1c1d1f;
+  columns: #1c1d1f;
+}
+
+.contenedor-cursos {
+  padding: 3.2rem;
+  border: 0.1rem solid #d1d7dc;
+  margin: 0 0 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedor-cursos .curso {
+  flex: 0 1 100%;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 480px) {
+  .contenedor-cursos .curso {
+    flex: 0 1 calc(50% - 1rem);
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contenedor-cursos .curso {
+    flex: 0 1 calc(33% - 1rem);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contenedor-cursos .curso {
+    flex: 0 1 calc(20% - 1rem);
+  }
+}
+.contenedor-cursos .curso .img-curso {
+  width: 100%;
+}
+.contenedor-cursos .curso h4 {
+  margin: 0.8rem 0 0.4rem 0;
+  font-family: HelveticaBold;
+  font-weight: 400;
+  color: #1c1d1f;
+  line-height: 1.9rem;
+  font-size: 1.4rem;
+}
+.contenedor-cursos .curso .profesor {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #717171;
+}
+.contenedor-cursos .curso .estrellas {
+  margin: 0 0 0.4rem 0;
+}
+.contenedor-cursos .curso .numero-estrellas {
+  color: #b4690e;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-family: HelveticaBold;
+}
+.contenedor-cursos .curso .img-estrellas {
+  height: 1rem;
+}
+.contenedor-cursos .curso .precio {
+  color: #1c1d1f;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-family: HelveticaBold;
+  font-weight: 400;
+  font-size: 1.4rem;
+  display: block;
+  margin: 0 0 0.4rem 0;
+}
+.contenedor-cursos .curso .mas-vendido {
+  color: #3d3c0a;
+  background-color: #eceb98;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-family: HelveticaBold;
+  padding: 0.4rem 0.8rem;
+}
+
+.footer {
+  background-color: #1c1d1f;
+  padding: 2.4rem 4.8rem 0 4.8rem;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .footer .contenedor-barras-navegacion {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer .contenedor-barras-navegacion ul {
+    flex: 1;
+  }
+}
+.footer .contenedor-barras-navegacion .nav-uno, .footer .contenedor-barras-navegacion .nav-dos, .footer .contenedor-barras-navegacion .nav-tres {
+  padding: 0;
+}
+.footer .contenedor-barras-navegacion li {
+  list-style: none;
+}
+.footer .contenedor-barras-navegacion a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+.footer .contenedor-barras-navegacion a:hover {
+  text-decoration: underline;
+}
+.footer .logo-and-copy {
+  padding: 3.2rem 0 1.2rem 0;
+}
+.footer .logo-and-copy img {
+  width: 10rem;
+}
+.footer .logo-and-copy p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+}
+@media only screen and (min-width: 768px) {
+  .footer .logo-and-copy {
+    display: flex;
+    justify-content: space-between;
+  }
+}
