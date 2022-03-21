@@ -1,2 +1,5 @@
-# clone-lading-page-udemy
-Clone udemy, example responsive course page
+## Instalar estas dependencias
+- gulp
+- gulp-autoprefixer
+- gulp-sass
+- sass
